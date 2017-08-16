@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Electronics_poc.Models;
+using Electrosim.Models;
 
-namespace Electronics_poc
+namespace Electrosim
 {
     class Program
     {
@@ -14,15 +14,12 @@ namespace Electronics_poc
 
         private static void InitializeComponents()
         {
+            var ground = new Ground();
             var powerSource = new PowerSource();
             powerSource.Voltage = 5;
 
-            var ground = new Ground();
-
-
-
-            _components.Add(powerSource);
             _components.Add(ground);
+            _components.Add(powerSource);
         }
     }
 }

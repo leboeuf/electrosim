@@ -1,4 +1,4 @@
-namespace Electronics_poc.Models
+namespace Electrosim.Models
 {
     public class PowerSource : IComponent
     {
