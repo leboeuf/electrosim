@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Electrosim.Models;
 
 namespace Electrosim
@@ -8,7 +9,7 @@ namespace Electrosim
     {
         private static List<IComponent> _components = new List<IComponent>();
         
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             InitializeComponents();
         }
